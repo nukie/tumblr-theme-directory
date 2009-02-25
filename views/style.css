@@ -78,11 +78,17 @@
 			margin: 0 0 10px;
 			}
 			
+			.theme a:hover img { background: #F66; }
+			
 		.theme h2 {
 			font-size: 15px;
 			font-weight: bold;
 			margin: 0 0 10px 0;
 			}
+			
+			.theme h2 a { color: #000; text-decoration: none; }
+			
+				.theme h2 a:hover { color: #F66; }
 			
 		.theme p {
 			font-size: 13px;

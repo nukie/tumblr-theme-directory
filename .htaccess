@@ -5,6 +5,6 @@ RewriteBase /tumblrthemedirectory/
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(/)?$ controllers/home.php [QSA]
 
-# Maps /[username] to shared.php?profile=[username]
-# RewriteCond %{REQUEST_FILENAME} !-f
-# RewriteRule ^([-_a-zA-Z0-9]+)(/)?$ shared.php?profile=$1
+# Maps /theme/[theme] to controllers/single.php?theme=[theme]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^theme/([-_a-zA-Z0-9]+)(/)?$ controllers/single.php?theme=$1

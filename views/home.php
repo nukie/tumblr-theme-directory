@@ -27,9 +27,13 @@
 				
 					<div class="theme">
 						
-						<img src="<?=$theme->image?>" alt="<?=$theme->name?>" />
+						<a href="./theme/<?php echo strtolower($theme->name); ?>">
+							<img src="<?=$theme->image?>" alt="<?=$theme->name?>" />
+						</a>
 						
-						<h2><?=$theme->name?></h2>
+						<h2>
+							<a href="./theme/<?php echo strtolower($theme->name); ?>"><?=$theme->name?></a>
+						</h2>
 						
 						<p><?=$theme->description?></p>
 						

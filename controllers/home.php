@@ -1,7 +1,5 @@
 <?php
 
-	error_reporting(E_ALL);
-
 	require "../models/Theme.php";
 	require "../config.php";
 	
