@@ -1,0 +1,9 @@
+Uses a very basic directory structure with a JSON file for storing meta data.
+
+## Todo
+
+* Theme preview
+* Make up some dummy Tumblr data for the preview
+* Permalink pages
+* Zip downloads
+* Instructions page

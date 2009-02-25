@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteBase /tumblrthemedirectory/
+
+# Maps the homepage to controllers/home.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(/)?$ controllers/home.php [QSA]
+
+# Maps /[username] to shared.php?profile=[username]
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteRule ^([-_a-zA-Z0-9]+)(/)?$ shared.php?profile=$1

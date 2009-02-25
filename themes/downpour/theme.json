@@ -1,0 +1,7 @@
+{
+	"theme": {
+		"name":		"Downpour",
+		"version":		"1.0",
+		"description":	"Pastel colours on a dark background set in monospaced type. Inspired by the Blackboard syntax highlighting scheme for TextMate."
+	}
+}
