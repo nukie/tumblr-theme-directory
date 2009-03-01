@@ -1,7 +1,5 @@
 <?php
 
-	error_reporting(E_ALL);
-
 	require "../models/Theme.php";
 	require "../config.php";
 	
@@ -12,9 +10,7 @@
 			
 	// Read the JSON and pull out the appropriate information
 	// setting it each to a property of a new theme object
-	$jsonFilename	= ROOT . "themes/$themeName/theme.json";
-	$jsonFile		= fopen($jsonFilename, "r");
-	$jsonContent 	= fread($jsonFile, filesize($jsonFilename));
+	$jsonContent 	= file_get_contents(ROOT . "themes/$themeName/theme.json");
 	$json 			= json_decode($jsonContent);
 	
 	// Prepare the array of files

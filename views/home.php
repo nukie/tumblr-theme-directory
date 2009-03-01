@@ -37,26 +37,14 @@
 						
 						<p><?=$theme->description?></p>
 						
-						<!--
-						
-						<h3>Files</h3>
-						
-						<ul>
-						
-							<?php foreach($theme->files as $file) { ?>
-						
-								<li><?=$file?></li>
-						
-							<?php } ?>
-						
-						</ul>
-						
-						-->
-						
 					</div>				
 				
 				<?php } ?>
 				
+			</div>
+			
+			<div id="footer">
+				Fork this project on <a href="http://github.com/jimwhimpey/tumblr-theme-directory/tree/master">Github</a>.
 			</div>
 		
 		</div>

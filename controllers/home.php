@@ -19,9 +19,7 @@
 			
 			// Read the JSON and pull out the appropriate information
 			// setting it each to a property of a new theme object
-			$jsonFilename	= ROOT . "themes/$dirTheme/theme.json";
-			$jsonFile		= fopen($jsonFilename, "r");
-			$jsonContent 	= fread($jsonFile, filesize($jsonFilename));
+			$jsonContent 	= file_get_contents(ROOT . "themes/$dirTheme/theme.json");
 			$json 			= json_decode($jsonContent);
 			
 			// Prepare the array of files
